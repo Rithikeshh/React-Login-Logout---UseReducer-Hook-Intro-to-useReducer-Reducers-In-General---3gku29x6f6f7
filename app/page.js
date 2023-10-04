@@ -21,7 +21,7 @@ const loginInfo = {
 
 function Home() {
   const [state, dispatch] = useReducer(reducer, loginInfo)
-
+  
   function handleLogin(e){
     e.preventDefault();
     if(state.username && state.password){
@@ -32,7 +32,7 @@ function Home() {
   }
   function handleLogut(){
     dispatch({type:'reset', payload : loginInfo})
-    // dispatch({type:'setPassword', payload : ''})
+    // dispatch({type:'setPassWord',payload: ''})
     // dispatch({type:'setUserName', payload : ''})
     // dispatch({type:'setIsLogin', payload : false})
     // dispatch({type:'setIsValid', payload : true})
